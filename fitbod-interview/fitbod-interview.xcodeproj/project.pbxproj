@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F003F9A29C774A900B7EA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003F9929C774A900B7EA98 /* AppDelegate.swift */; };
+		8F003F9C29C774A900B7EA98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003F9B29C774A900B7EA98 /* SceneDelegate.swift */; };
+		8F003F9E29C774A900B7EA98 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003F9D29C774A900B7EA98 /* WorkoutsViewController.swift */; };
+		8F003FA329C774AA00B7EA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F003FA229C774AA00B7EA98 /* Assets.xcassets */; };
+		8F003FA629C774AA00B7EA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F003FA429C774AA00B7EA98 /* LaunchScreen.storyboard */; };
+		8F003FB129C774AA00B7EA98 /* fitbod_interviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FB029C774AA00B7EA98 /* fitbod_interviewTests.swift */; };
+		8F003FBB29C774AA00B7EA98 /* fitbod_interviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FBA29C774AA00B7EA98 /* fitbod_interviewUITests.swift */; };
+		8F003FBD29C774AA00B7EA98 /* fitbod_interviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FBC29C774AA00B7EA98 /* fitbod_interviewUITestsLaunchTests.swift */; };
+		8F003FCD29C775DF00B7EA98 /* workoutData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F003FCC29C775DF00B7EA98 /* workoutData.txt */; };
+		8F003FD029C775F800B7EA98 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FCF29C775F800B7EA98 /* Workout.swift */; };
+		8F003FD229C7836000B7EA98 /* ArrayInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FD129C7836000B7EA98 /* ArrayInitializable.swift */; };
+		8F003FD529C7837400B7EA98 /* DateFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FD429C7837400B7EA98 /* DateFormatter+Additions.swift */; };
+		8F003FD729C7838900B7EA98 /* Workout+ArrayInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FD629C7838900B7EA98 /* Workout+ArrayInitializable.swift */; };
+		8F003FD929C783EE00B7EA98 /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FD829C783EE00B7EA98 /* Bundle+Additions.swift */; };
+		8F003FDC29C7848700B7EA98 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F003FDB29C7848700B7EA98 /* WorkoutTableViewCell.swift */; };
+		8F01FEC229CCA6B600829B65 /* WorkoutsCSVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01FEC129CCA6B600829B65 /* WorkoutsCSVService.swift */; };
+		8F01FEC529CCA76000829B65 /* WorkoutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01FEC429CCA76000829B65 /* WorkoutsProvider.swift */; };
+		8F01FEC729CCA7E400829B65 /* UIBarButtonItem+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01FEC629CCA7E400829B65 /* UIBarButtonItem+Custom.swift */; };
+		8F01FEC929CCA84600829B65 /* UIImage+SystemImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01FEC829CCA84600829B65 /* UIImage+SystemImages.swift */; };
+		8F01FECB29CCAA2000829B65 /* GroupedWorkouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01FECA29CCAA2000829B65 /* GroupedWorkouts.swift */; };
+		8F01FECD29CCCAA400829B65 /* workoutData2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F01FECC29CCCAA400829B65 /* workoutData2.txt */; };
+		8F01FECF29CCCB0800829B65 /* workoutData3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F01FECE29CCCB0800829B65 /* workoutData3.txt */; };
+		8F01FED129CCCD5D00829B65 /* UIViewController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01FED029CCCD5D00829B65 /* UIViewController+Error.swift */; };
+		8F68CB4C29CB7A1400B28E21 /* WorkoutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F68CB4B29CB7A1400B28E21 /* WorkoutChartView.swift */; };
+		8F6DE0CC29C7B09B00E33F44 /* WorkoutsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6DE0CB29C7B09B00E33F44 /* WorkoutsDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F003FAD29C774AA00B7EA98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F003F8E29C774A900B7EA98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F003F9529C774A900B7EA98;
+			remoteInfo = "fitbod-interview";
+		};
+		8F003FB729C774AA00B7EA98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F003F8E29C774A900B7EA98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F003F9529C774A900B7EA98;
+			remoteInfo = "fitbod-interview";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F003F9629C774A900B7EA98 /* fitbod-interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitbod-interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F003F9929C774A900B7EA98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F003F9B29C774A900B7EA98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F003F9D29C774A900B7EA98 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		8F003FA229C774AA00B7EA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F003FA529C774AA00B7EA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F003FA729C774AA00B7EA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F003FAC29C774AA00B7EA98 /* fitbod-interviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fitbod-interviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F003FB029C774AA00B7EA98 /* fitbod_interviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitbod_interviewTests.swift; sourceTree = "<group>"; };
+		8F003FB629C774AA00B7EA98 /* fitbod-interviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fitbod-interviewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F003FBA29C774AA00B7EA98 /* fitbod_interviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitbod_interviewUITests.swift; sourceTree = "<group>"; };
+		8F003FBC29C774AA00B7EA98 /* fitbod_interviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitbod_interviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F003FCC29C775DF00B7EA98 /* workoutData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workoutData.txt; sourceTree = "<group>"; };
+		8F003FCF29C775F800B7EA98 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		8F003FD129C7836000B7EA98 /* ArrayInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayInitializable.swift; sourceTree = "<group>"; };
+		8F003FD429C7837400B7EA98 /* DateFormatter+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Additions.swift"; sourceTree = "<group>"; };
+		8F003FD629C7838900B7EA98 /* Workout+ArrayInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+ArrayInitializable.swift"; sourceTree = "<group>"; };
+		8F003FD829C783EE00B7EA98 /* Bundle+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
+		8F003FDB29C7848700B7EA98 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		8F01FEC129CCA6B600829B65 /* WorkoutsCSVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsCSVService.swift; sourceTree = "<group>"; };
+		8F01FEC429CCA76000829B65 /* WorkoutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsProvider.swift; sourceTree = "<group>"; };
+		8F01FEC629CCA7E400829B65 /* UIBarButtonItem+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Custom.swift"; sourceTree = "<group>"; };
+		8F01FEC829CCA84600829B65 /* UIImage+SystemImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SystemImages.swift"; sourceTree = "<group>"; };
+		8F01FECA29CCAA2000829B65 /* GroupedWorkouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedWorkouts.swift; sourceTree = "<group>"; };
+		8F01FECC29CCCAA400829B65 /* workoutData2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workoutData2.txt; sourceTree = "<group>"; };
+		8F01FECE29CCCB0800829B65 /* workoutData3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workoutData3.txt; sourceTree = "<group>"; };
+		8F01FED029CCCD5D00829B65 /* UIViewController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Error.swift"; sourceTree = "<group>"; };
+		8F68CB4B29CB7A1400B28E21 /* WorkoutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutChartView.swift; sourceTree = "<group>"; };
+		8F6DE0CB29C7B09B00E33F44 /* WorkoutsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F003F9329C774A900B7EA98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F003FA929C774AA00B7EA98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F003FB329C774AA00B7EA98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F003F8D29C774A900B7EA98 = {
+			isa = PBXGroup;
+			children = (
+				8F003F9829C774A900B7EA98 /* fitbod-interview */,
+				8F003FAF29C774AA00B7EA98 /* fitbod-interviewTests */,
+				8F003FB929C774AA00B7EA98 /* fitbod-interviewUITests */,
+				8F003F9729C774A900B7EA98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F003F9729C774A900B7EA98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F003F9629C774A900B7EA98 /* fitbod-interview.app */,
+				8F003FAC29C774AA00B7EA98 /* fitbod-interviewTests.xctest */,
+				8F003FB629C774AA00B7EA98 /* fitbod-interviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F003F9829C774A900B7EA98 /* fitbod-interview */ = {
+			isa = PBXGroup;
+			children = (
+				8F6DE0CA29C7B08200E33F44 /* Views */,
+				8F6DE0C929C7B07D00E33F44 /* View Controllers */,
+				8F003FDA29C7842000B7EA98 /* Services */,
+				8F003FD329C7836C00B7EA98 /* Extensions */,
+				8F003FCE29C775EC00B7EA98 /* Models */,
+				8F003FCB29C775D200B7EA98 /* Fixtures */,
+				8F003FC929C7757400B7EA98 /* Supporting Files */,
+			);
+			path = "fitbod-interview";
+			sourceTree = "<group>";
+		};
+		8F003FAF29C774AA00B7EA98 /* fitbod-interviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F003FB029C774AA00B7EA98 /* fitbod_interviewTests.swift */,
+			);
+			path = "fitbod-interviewTests";
+			sourceTree = "<group>";
+		};
+		8F003FB929C774AA00B7EA98 /* fitbod-interviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F003FBA29C774AA00B7EA98 /* fitbod_interviewUITests.swift */,
+				8F003FBC29C774AA00B7EA98 /* fitbod_interviewUITestsLaunchTests.swift */,
+			);
+			path = "fitbod-interviewUITests";
+			sourceTree = "<group>";
+		};
+		8F003FC929C7757400B7EA98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F003FA229C774AA00B7EA98 /* Assets.xcassets */,
+				8F003FA429C774AA00B7EA98 /* LaunchScreen.storyboard */,
+				8F003FA729C774AA00B7EA98 /* Info.plist */,
+				8F003F9929C774A900B7EA98 /* AppDelegate.swift */,
+				8F003F9B29C774A900B7EA98 /* SceneDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F003FCB29C775D200B7EA98 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				8F003FCC29C775DF00B7EA98 /* workoutData.txt */,
+				8F01FECC29CCCAA400829B65 /* workoutData2.txt */,
+				8F01FECE29CCCB0800829B65 /* workoutData3.txt */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		8F003FCE29C775EC00B7EA98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F01FEC429CCA76000829B65 /* WorkoutsProvider.swift */,
+				8F003FCF29C775F800B7EA98 /* Workout.swift */,
+				8F003FD129C7836000B7EA98 /* ArrayInitializable.swift */,
+				8F01FECA29CCAA2000829B65 /* GroupedWorkouts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F003FD329C7836C00B7EA98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F003FD429C7837400B7EA98 /* DateFormatter+Additions.swift */,
+				8F003FD629C7838900B7EA98 /* Workout+ArrayInitializable.swift */,
+				8F003FD829C783EE00B7EA98 /* Bundle+Additions.swift */,
+				8F01FEC629CCA7E400829B65 /* UIBarButtonItem+Custom.swift */,
+				8F01FEC829CCA84600829B65 /* UIImage+SystemImages.swift */,
+				8F01FED029CCCD5D00829B65 /* UIViewController+Error.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F003FDA29C7842000B7EA98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F01FEC129CCA6B600829B65 /* WorkoutsCSVService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F6DE0C929C7B07D00E33F44 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F003F9D29C774A900B7EA98 /* WorkoutsViewController.swift */,
+				8F6DE0CB29C7B09B00E33F44 /* WorkoutsDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8F6DE0CA29C7B08200E33F44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F003FDB29C7848700B7EA98 /* WorkoutTableViewCell.swift */,
+				8F68CB4B29CB7A1400B28E21 /* WorkoutChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F003F9529C774A900B7EA98 /* fitbod-interview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F003FC029C774AA00B7EA98 /* Build configuration list for PBXNativeTarget "fitbod-interview" */;
+			buildPhases = (
+				8F003F9229C774A900B7EA98 /* Sources */,
+				8F003F9329C774A900B7EA98 /* Frameworks */,
+				8F003F9429C774A900B7EA98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fitbod-interview";
+			productName = "fitbod-interview";
+			productReference = 8F003F9629C774A900B7EA98 /* fitbod-interview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F003FAB29C774AA00B7EA98 /* fitbod-interviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F003FC329C774AA00B7EA98 /* Build configuration list for PBXNativeTarget "fitbod-interviewTests" */;
+			buildPhases = (
+				8F003FA829C774AA00B7EA98 /* Sources */,
+				8F003FA929C774AA00B7EA98 /* Frameworks */,
+				8F003FAA29C774AA00B7EA98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F003FAE29C774AA00B7EA98 /* PBXTargetDependency */,
+			);
+			name = "fitbod-interviewTests";
+			productName = "fitbod-interviewTests";
+			productReference = 8F003FAC29C774AA00B7EA98 /* fitbod-interviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F003FB529C774AA00B7EA98 /* fitbod-interviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F003FC629C774AA00B7EA98 /* Build configuration list for PBXNativeTarget "fitbod-interviewUITests" */;
+			buildPhases = (
+				8F003FB229C774AA00B7EA98 /* Sources */,
+				8F003FB329C774AA00B7EA98 /* Frameworks */,
+				8F003FB429C774AA00B7EA98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F003FB829C774AA00B7EA98 /* PBXTargetDependency */,
+			);
+			name = "fitbod-interviewUITests";
+			productName = "fitbod-interviewUITests";
+			productReference = 8F003FB629C774AA00B7EA98 /* fitbod-interviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F003F8E29C774A900B7EA98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8F003F9529C774A900B7EA98 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8F003FAB29C774AA00B7EA98 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8F003F9529C774A900B7EA98;
+					};
+					8F003FB529C774AA00B7EA98 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8F003F9529C774A900B7EA98;
+					};
+				};
+			};
+			buildConfigurationList = 8F003F9129C774A900B7EA98 /* Build configuration list for PBXProject "fitbod-interview" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F003F8D29C774A900B7EA98;
+			productRefGroup = 8F003F9729C774A900B7EA98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F003F9529C774A900B7EA98 /* fitbod-interview */,
+				8F003FAB29C774AA00B7EA98 /* fitbod-interviewTests */,
+				8F003FB529C774AA00B7EA98 /* fitbod-interviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F003F9429C774A900B7EA98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F003FA629C774AA00B7EA98 /* LaunchScreen.storyboard in Resources */,
+				8F003FA329C774AA00B7EA98 /* Assets.xcassets in Resources */,
+				8F01FECF29CCCB0800829B65 /* workoutData3.txt in Resources */,
+				8F01FECD29CCCAA400829B65 /* workoutData2.txt in Resources */,
+				8F003FCD29C775DF00B7EA98 /* workoutData.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F003FAA29C774AA00B7EA98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F003FB429C774AA00B7EA98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F003F9229C774A900B7EA98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F003F9E29C774A900B7EA98 /* WorkoutsViewController.swift in Sources */,
+				8F003F9A29C774A900B7EA98 /* AppDelegate.swift in Sources */,
+				8F01FEC929CCA84600829B65 /* UIImage+SystemImages.swift in Sources */,
+				8F003FD229C7836000B7EA98 /* ArrayInitializable.swift in Sources */,
+				8F01FECB29CCAA2000829B65 /* GroupedWorkouts.swift in Sources */,
+				8F003FD529C7837400B7EA98 /* DateFormatter+Additions.swift in Sources */,
+				8F01FEC529CCA76000829B65 /* WorkoutsProvider.swift in Sources */,
+				8F01FEC729CCA7E400829B65 /* UIBarButtonItem+Custom.swift in Sources */,
+				8F003F9C29C774A900B7EA98 /* SceneDelegate.swift in Sources */,
+				8F6DE0CC29C7B09B00E33F44 /* WorkoutsDetailViewController.swift in Sources */,
+				8F003FD929C783EE00B7EA98 /* Bundle+Additions.swift in Sources */,
+				8F01FEC229CCA6B600829B65 /* WorkoutsCSVService.swift in Sources */,
+				8F68CB4C29CB7A1400B28E21 /* WorkoutChartView.swift in Sources */,
+				8F003FD029C775F800B7EA98 /* Workout.swift in Sources */,
+				8F003FDC29C7848700B7EA98 /* WorkoutTableViewCell.swift in Sources */,
+				8F003FD729C7838900B7EA98 /* Workout+ArrayInitializable.swift in Sources */,
+				8F01FED129CCCD5D00829B65 /* UIViewController+Error.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F003FA829C774AA00B7EA98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F003FB129C774AA00B7EA98 /* fitbod_interviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F003FB229C774AA00B7EA98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F003FBD29C774AA00B7EA98 /* fitbod_interviewUITestsLaunchTests.swift in Sources */,
+				8F003FBB29C774AA00B7EA98 /* fitbod_interviewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F003FAE29C774AA00B7EA98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F003F9529C774A900B7EA98 /* fitbod-interview */;
+			targetProxy = 8F003FAD29C774AA00B7EA98 /* PBXContainerItemProxy */;
+		};
+		8F003FB829C774AA00B7EA98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F003F9529C774A900B7EA98 /* fitbod-interview */;
+			targetProxy = 8F003FB729C774AA00B7EA98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F003FA429C774AA00B7EA98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F003FA529C774AA00B7EA98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F003FBE29C774AA00B7EA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F003FBF29C774AA00B7EA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F003FC129C774AA00B7EA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZE57UJRQ5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fitbod-interview/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajularora.fitbod-interview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F003FC229C774AA00B7EA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZE57UJRQ5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fitbod-interview/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajularora.fitbod-interview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F003FC429C774AA00B7EA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZE57UJRQ5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajularora.fitbod-interviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fitbod-interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fitbod-interview";
+			};
+			name = Debug;
+		};
+		8F003FC529C774AA00B7EA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZE57UJRQ5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajularora.fitbod-interviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fitbod-interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fitbod-interview";
+			};
+			name = Release;
+		};
+		8F003FC729C774AA00B7EA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZE57UJRQ5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajularora.fitbod-interviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "fitbod-interview";
+			};
+			name = Debug;
+		};
+		8F003FC829C774AA00B7EA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZE57UJRQ5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajularora.fitbod-interviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "fitbod-interview";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F003F9129C774A900B7EA98 /* Build configuration list for PBXProject "fitbod-interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F003FBE29C774AA00B7EA98 /* Debug */,
+				8F003FBF29C774AA00B7EA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F003FC029C774AA00B7EA98 /* Build configuration list for PBXNativeTarget "fitbod-interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F003FC129C774AA00B7EA98 /* Debug */,
+				8F003FC229C774AA00B7EA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F003FC329C774AA00B7EA98 /* Build configuration list for PBXNativeTarget "fitbod-interviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F003FC429C774AA00B7EA98 /* Debug */,
+				8F003FC529C774AA00B7EA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F003FC629C774AA00B7EA98 /* Build configuration list for PBXNativeTarget "fitbod-interviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F003FC729C774AA00B7EA98 /* Debug */,
+				8F003FC829C774AA00B7EA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F003F8E29C774A900B7EA98 /* Project object */;
+}
